@@ -1,0 +1,484 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem 4rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo img {
+  width: 180px;
+}
+
+.navbar__menuitem {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar__menuitem--list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #042e2b;
+}
+
+.navbar__icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar__icons--lang {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #042e2b;
+}
+
+.navbar__icons--lang img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar__profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.search {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.search__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #003b00;
+  margin-bottom: 30px;
+}
+
+.search__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.search__tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  color: #003b00;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+
+.search__tab--underline {
+  border-bottom: 2px solid #003b00;
+}
+
+.search__tab-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.search__bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.search__input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    padding: 6px 10px;
+    width: 79%;
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.search__input {
+  flex: 1; /* Key change */
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+
+.search__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.search__button {
+  background-color: #00e682;
+  color: #003b00;
+  font-weight: 600;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+
+.experience-card {
+  display: flex;
+  flex-direction: row; /* make image + content side by side */
+  align-items: center; /* vertically center both blocks */
+  background-color: #00ff66;
+  border-radius: 10px;
+  padding: 20px;
+width: 100%;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+
+.experience-card__image {
+  flex: 1;
+  position: relative;
+  margin-right: 20px;
+}
+
+.experience-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.experience-card__credit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #00ff66;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.experience-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center */
+  align-items: flex-start; /* left-align the content */
+  color: #000;
+  text-align: left;
+}
+
+
+.experience-card__title {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.experience-card__description {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.experience-card__button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: start;
+}
+
+.experience-card__button:hover {
+  background-color: #333;
+}
+
+.experience-card__image,
+.experience-card__content {
+  flex: 1;
+}
+
+
+.interest__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.interest__subheading {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.interest__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.interest__card {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.interest__card:hover {
+  transform: scale(1.03);
+}
+
+.interest__label {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Background Images - Replace with real URLs or base64 */
+.interest__card--outdoors {
+  background: url('/Image/outdoor.jpg') center/cover no-repeat;
+}
+
+.interest__card--food {
+  background: url('/Image/food.jpg') center/cover no-repeat;
+}
+
+.interest__card--culture {
+  background: url('/Image/culture.jpg') center/cover no-repeat;
+}
+
+.interest__card--water {
+  background: url('/Image/water.jpg') center/cover no-repeat;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  gap: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.feature-card__image-wrapper {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  transform: rotate(-2deg);
+}
+
+.feature-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.feature-card__title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #002e18;
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+.feature-card__button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #002e18;
+  border-radius: 999px;
+  background: transparent;
+  color: #002e18;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.feature-card__button:hover {
+  background-color: #002e18;
+  color: white;
+}
+
+.carousel__heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #002e18;
+  margin-bottom: 0.25rem;
+}
+
+.carousel__subheading {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.carousel__wrapper {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.carousel__track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.carousel__card {
+  background: #fff;
+  border-radius: 0.75rem;
+  min-width: 280px;
+  max-width: 300px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.carousel__image-wrapper {
+  position: relative;
+}
+
+.carousel__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel__favorite {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: white;
+  border: none;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.carousel__info {
+  padding: 1rem;
+}
+
+.carousel__location {
+  display: inline-block;
+  background: #eef0f3;
+  color: #222;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.carousel__title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.25rem 0;
+}
+
+.carousel__rating {
+  font-size: 0.9rem;
+  color: green;
+  margin-top: 0.25rem;
+}
+
+.carousel__reviews {
+  color: #555;
+}
+
+.carousel__price {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.carousel__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 2px solid #002e18;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel__nav--prev {
+  left: 0.5rem;
+}
+
+.carousel__nav--next {
+  right: 0.5rem;
+}
+
+.carousel__nav:hover {
+  background-color: #002e18;
+  color: white;
+}
